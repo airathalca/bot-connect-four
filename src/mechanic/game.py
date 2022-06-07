@@ -43,8 +43,8 @@ class Game:
         if self.config.game_type == GameConstant.BVB:
             if not self.config.is_dump:
                 # Change this into your bots
-                model1 = Bot13519144()
-                model2 = Bot13519144()
+                model1 = Bot13520101()
+                model2 = Bot13520101()
             else:
                 # Don't change this
                 model1 = pickle.load(open(Path.BVB_P1, "rb"))
@@ -55,7 +55,7 @@ class Game:
         elif self.config.game_type == GameConstant.PVB:
             if not self.config.is_dump:
                 # Change this into your bots
-                model = Bot13519144()
+                model = Bot13520101()
             else:
                 # Don't change this
                 model = pickle.load(open(Path.PVB, "rb"))
